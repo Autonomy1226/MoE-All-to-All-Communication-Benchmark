@@ -86,8 +86,3 @@ results/
 ├── benchmark_comparison.png         # 延迟、吞吐、通信量对比
 └── latency_distribution.png         # 延迟分布直方图
 ```
-
-## 简历呈现
-
-> **MoE 通信 Benchmark 工具** | PyTorch Distributed  
-> 实现 MoE 架构下 Token Dispatch/Combine 的三种 All-to-All 策略（Naive / Bucketed / Pipelined），在 EP 配置下使用多进程模拟分布式通信，对比不同 Token 数、Expert 数、Hidden Dim 下的延迟与吞吐。使用 PyTorch Profiler 完成通信-计算重叠分析，量化 All-to-All 通信占比与填充开销。
